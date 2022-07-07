@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var id = "1004";
+        var ps = "1234";
+
+        var user_id = prompt("아이디는?", "");
+        var user_ps = prompt("비번은?", "");
+
+        if(id == user_id) {
+            if(ps == user_ps) {
+                document.write("방가방가");
+            }
+            else {
+                alert("비번오류");
+                location.reload();
+            }
+        }
+        else {
+            alert("아이디오류");
+            location.reload();
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var name = prompt("이름은?", "");
+        var height = prompt("키는?", "0");
+        var weight = prompt("몸무게는?", "0");
+
+        var average_weight = (height - 100) * 0.9;
+
+        var result = average_weight - 5 <= weight && weight <= average_weight + 5;
+        result = result ? "적정체중" : "문제있음";
+        document.write(name + "님은 " + result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
